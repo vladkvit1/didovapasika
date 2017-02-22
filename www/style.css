@@ -1,0 +1,250 @@
+body {
+	font-family: Tahoma;
+ 
+  background-image: url("img/bees4.png");
+  background-repeat: repeat-x;
+ 
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+#nav {
+border : 3px;
+font-size: 16.5px;
+font-weight: 600;
+background-color: white;
+}
+.container {
+width: 900px;
+background-image: url("img/h1.png");
+border : 3px;
+ background-repeat: no-repeat;
+
+}
+.row_marketing {
+margin-top: 5px;
+}
+
+.img { 
+    
+    margin: 10px 15px 0px 7px; 
+	border-radius: 5px;
+
+   }   
+.Add {
+ margin: 10px 10px 10px 10px; 
+}
+
+.quote {
+  margin-left: 500px;
+  width: 400px;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-top: 455px;
+}
+
+h3 {
+text-align: center;
+}
+
+p {
+font-size: 13pt;
+text-align: justify;
+}
+
+.footer {
+
+text-align: center;
+margin-bottom: -1px;
+}
+
+#wrap{
+	display: none;
+	opacity: 0.8;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 16px;
+	background-color: rgba(1, 1, 1, 0.725);
+	z-index: 100;
+	overflow: auto;
+	
+	}
+	
+#popup1{
+		width: 400px;
+		height: 500px;
+		margin: 50px auto;
+		display: none;
+		background: #fff;
+		z-index: 200;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+		border-radius: 8%;
+		border: 3px;
+		border-bottom-color: #0000FF;
+		 background-image: url("img/Untitled.png");
+		 box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+	
+#popup2{
+		width: 400px;
+		height: 500px;
+		margin: 50px auto;
+		display: none;
+		background: #fff;
+		z-index: 200;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+		border-radius: 8%;
+		border: 3px;
+		border-bottom-color: #0000FF;
+		 background-image: url("img/Untitled.png");
+		 box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+	
+	#popup3{
+		width: 400px;
+		height: 500px;
+		margin: 50px auto;
+		display: none;
+		background: #fff;
+		z-index: 200;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+		border-radius: 8%;
+		border: 3px;
+		border-bottom-color: #0000FF;
+		 background-image: url("img/Untitled.png");
+		 box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+	
+	#popup4{
+		width: 400px;
+		height: 500px;
+		margin: 50px auto;
+		display: none;
+		background: #fff;
+		z-index: 200;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+		border-radius: 8%;
+		border: 3px;
+		border-bottom-color: #0000FF;
+		 background-image: url("img/Untitled.png");
+		 box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+	
+	
+	#popup{
+		width: 700px;
+		height: 500px;
+		margin: 50px auto;
+		display: none;
+		background: #fff;
+		z-index: 200;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0px;
+		bottom: 0;
+		padding: 40px;
+		border-radius: 2%;
+		border: 3px;
+		border-bottom-color: #0000FF;
+ background-image: url("img/Untitled.png");		
+		 box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+.close{
+		margin-left: 364px;
+		margin-top: 4px;
+		cursor: pointer;
+	}
+	
+.b-popup-content {
+	border-radius: 8%;
+	
+}
+
+#yau{
+	color:#0000FF;
+	font-size:30px;
+	font-family:"Monotype Corsiva";
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+
+}
+
+table {
+text-align: center;
+margin-left: 35px;
+ border: 1px solid #a52a2a;
+width: 800px; 
+//height: 2000px; 
+border-spacing: 2px;
+}
+.tab1 {
+	background: #fff;
+	width: 800px;
+	height: auto;
+	border-collapse: separate; /* По умолчанию, когда для каждой ячейки своя граница */ 
+	text-align: center;  
+    table-layout: auto; /* По умолчанию. Браузер отображает таблицу после того, как проанализирует размеры ячеек */
+	}
+	
+
+.Add {
+
+}
+
+.hovergallery img{
+width:200px;
+-webkit-transform:scale(0.8); /*Webkit: Scale down image to 0.8x original size*/
+-moz-transform:scale(0.8); /*Mozilla scale version*/
+-o-transform:scale(0.8); /*Opera scale version*/
+-webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+-moz-transition-duration: 0.5s; /*Mozilla duration version*/
+-o-transition-duration: 0.5s; /*Opera duration version*/
+opacity: 0.7; /*initial opacity of images*/
+margin: 0 10px 5px 0; /*margin between images*/
+}
+.hovergallery img:hover{
+-webkit-transform:scale(1.4); /*Webkit: Scale up image to 1.2x original size*/
+-moz-transform:scale(1.4); /*Mozilla scale version*/
+-o-transform:scale(1.4); /*Opera scale version*/
+box-shadow:0px 0px 30px gray; /*CSS3 shadow: 30px blurred shadow all around image*/
+-webkit-box-shadow:0px 0px 30px gray; /*Safari shadow version*/
+-moz-box-shadow:0px 0px 30px gray; /*Mozilla shadow version*/
+opacity: 1;
+}
+
+.cart_button_table{
+border: 0px;
+width: 60% 
+}
+
+.lang {
+cursor: pointer;
+}

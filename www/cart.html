@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ТМ "Дідова пасіка"</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	    <!-- Мой CSS -->
+    <link href="style.css" rel="stylesheet">  
+</head>
+  <body>
+
+    <div class="container">
+	 <div class="row-fluid">		 
+        <nav class="navbar navbar-default">
+			<div class="container-fluid">			
+			<div>
+			  <ul class="nav navbar-nav" id="nav">
+				<li role="presentation"><a href="index.html">Главная</a></li>
+				<li role="presentation"><a href="products.html">Продукция</a></li>
+				<li role="presentation"><a href="about.html">О нас</a></li>
+				<li role="presentation"><a href="contacts.html">Контакты</a></li>
+				<li role="presentation"><a href="med.html">Медовые рецепты</a></li>
+				<li role="presentation"><a href="medInfo.html">О мёде</a></li>
+				<li role="presentation"> <a href="cart.html"> <img src="img/4.png" width="30" height="30"/> Корзина </a></li>
+				<hr/>
+			  </ul>				
+			</div>
+			</div>
+		</nav>        
+
+    <div class="row_marketing" style="margin-top: 455px;">        
+		
+		
+	  <br/><p><h3> Товары в корзине: </h3></p>
+	  <hr/>
+		
+		<div class="col-lg-9"> 
+			<form>			
+				<table class="tab1" id="orderedProductsTbl" border="1px">                    
+                        <tr>
+							<th>Id</th>
+                            <th>Наименование товара</th>                          
+                            <th>Цена за упаковку</th>	
+							<th>Количество</th>								
+                        </tr>                   
+                    <tbody id="orderedProductsTblBody"></tbody>                   
+                        <tr>
+                            <td>Итого</td>
+							<td colspan="3" align="right" id="cart_total" style="font-weight: 800; color: red;"> </td>
+                        </tr>                  
+				</table>
+			<p>
+			<br/>
+				<br/>
+			<hr/>
+			<br/>
+				<br/>
+			<table style="border: 0px;">
+				<tr>
+					<td class="cart_button_table"> </td>
+					<td>
+					 <input type="button" value="Очистить корзину" onclick="clear_cart()">
+					 <input type="button" value="Оформить заказ" onclick="popBox('block')">
+					 </td>
+				<tr>
+			</table>
+			</p>
+			</form>
+			
+			<!-- Само заказа-->
+		<div class="b-popup" id="popup">
+		 <!-- Картинка крестика-->
+				<img class="close" onclick="popBox('none')" src="img/close.png">
+				<div class="b-popup-content">
+				<form>	
+				<label> Форма оформления заказа </label> <hr/>
+					<table style="width: 600px; border: 0px; text-align: left;">
+					<tr>
+						<td><label for="first_name">Имя</label></td>
+						<td><input id="first_name" type="text" name="first_name" autofocus id="first_name" placeholder="Имя"><br/><br/></td>
+					</tr>
+					<tr>					
+						<td><label for="second_name">Фамилия</label></td>
+						<td><input id="second_name" type="text" name="second_name" placeholder="Фамилия"><br/><br/></td>
+					</tr>
+					<tr>
+						<td><label for="second_name">Контактный телефон *</label></td>
+						<td><input type="tel" pattern="\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone" placeholder="(050)121-34-57" title="Формат ввода: (050)121-34-57" required/><br/><br/></td>
+					</tr>
+					<tr>	
+						<td><label for="second_name">Email *</label></td>
+						<td><input type="email"  pattern="/^([w-.]+@([w-]+.)+[w-]{2,4})?$/" name="email" id="email" width="50px" placeholder="example@mail.net" title="Формат ввода: example@mail.net" required/><br/><br/></td>
+					</tr>
+					</table>
+					<hr/>
+					<input type="submit" value="Подтвердить" onclick="ok()">
+				<br/> <br/>
+				<p> <img src="img/Bee.png" width="15" height="18" /> Спасибо за Ваш заказ! В течении дня наш менеджер свяжется с Вами для уточнения подробностей заказа! <img src="img/Bee.png" width="15" height="18" /></p>
+				
+				</form>
+			</div>
+		</div>
+			
+			
+		</div>	
+		</div> 
+		</div> 
+		
+    </div> <!-- /container -->
+
+
+		
+			<footer class="footer">
+			<br/>
+				<br/>
+				<span>&copy; Company 2015 <img src="img/Bee.png" width="15" height="18" /></span>
+			
+		 </footer>
+	
+		 <script>		 
+
+function clear_cart(){
+	window.localStorage.clear();
+	displayShoppingCart();
+}
+ 
+ 
+ function ok() {
+ confirm('Заказ отправлен');
+ clear_cart();
+ }
+function displayShoppingCart(){
+    var orderedProductsTblBody=document.getElementById("orderedProductsTblBody");            
+    while(orderedProductsTblBody.rows.length>0) {
+    orderedProductsTblBody.deleteRow(0);
+	}
+       
+	var cart_total_price=0;    
+			
+       for(var i = 0; i < localStorage.length; i++){
+                var row=orderedProductsTblBody.insertRow();   
+				var cellId = row.insertCell(0);  
+                var cellName = row.insertCell(1);               
+                var cellPrice = row.insertCell(2);
+				var cellCount = row.insertCell(3);
+				
+				
+                cellPrice.align="right";     
+				var key =	localStorage.key(i);  
+				cellId.innerHTML = i+1;  				
+                cellName.innerHTML = key;                
+                cellPrice.innerHTML = Number(localStorage[key]);
+				cellCount.innerHTML =  "<input type='number' id='count" + i + "' value='1' min='1' oninput='myFunction(this.value)' style='width: 45px'>";
+                cart_total_price+=((Number(localStorage[key]))*((Number(document.getElementById("count" + i + "").value))));
+            }            
+    document.getElementById("cart_total").innerHTML=cart_total_price;
+} 	
+
+function myFunction(value) {
+	var total_price = 0;
+	for(var i = 0; i < localStorage.length; i++){
+	 total_price += ((Number(localStorage[localStorage.key(i)]))*((Number(document.getElementById("count" + i + "").value))));	 
+	}
+	document.getElementById("cart_total").innerHTML = total_price;
+}
+
+function myFunction2(val) {
+    alert("The input value has changed. The new value is: " + val);
+}
+
+function popBox(state) {
+	document.getElementById("popup").style.display = state;
+}
+
+displayShoppingCart();  	
+		 </script>
+		 
+  </body>
+</html>

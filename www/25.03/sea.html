@@ -1,0 +1,149 @@
+﻿<!DOCTYPE HTML>
+<html>
+ <head>
+ 
+  <style type="text/css">
+   .block1 { 
+    width: 500px; 
+	height: 350px; 
+	background: linear-gradient(#A9D5E5 50%, #349AC9 50%); 
+    border: 1px #52A4B5; 
+	border-radius: 20px;
+
+   }
+   
+   .sun {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    left: 100px;
+    background-color: #ffffaa;
+    border-radius: 50%;
+	animation: anim2 15s 2;
+	-webkit-animation:anim2 15s 2;
+}
+
+.mountain {
+	position: fixed;
+	margin-left: -40px;
+margin-top: 76px;
+    width: 0px;
+    height: 0px;	
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 99px solid #7D4040;
+}
+
+
+.mountain2 {
+	position: fixed;
+	margin-left: 90px;
+margin-top: 100px;
+    width: 0px;
+    height: 0px;	
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 75px solid #7D4040;
+}
+
+
+.mountain3 {
+	position: fixed;
+	margin-left: 240px;
+margin-top: 100px;
+    width: 0px;
+    height: 0px;	
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 99px solid #7D4040;
+}
+
+
+.mountain4 {
+	position: fixed;
+	margin-left: 340px;
+	margin-top: 100px;
+    width: 0px;
+    height: 0px;	
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 99px solid #7D4040;
+}
+
+.ship {
+	position: fixed;
+	margin-left: 300px;
+	margin-top: 300px;
+    width: 100px;
+    height: 0px;	
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 16px solid white;
+	transform: rotate(180deg);
+}
+
+.ship2 {
+	position: fixed;
+	margin-left: 340px;
+	margin-top: 280px;
+    width: 50px;
+    height: 0px;	
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 11px solid white;
+	transform: rotate(90deg);
+}
+
+@keyframes anim{
+from {margin-left:3px;}
+to {margin-left:500px;}
+}
+
+@keyframes anim2{
+from {margin-top:17px;}
+to {margin-top:-50px;}
+}
+
+@-webkit-keyframes anim2{
+from {margin-top:17px;}
+to {margin-top:-50px;}
+}
+
+
+@-webkit-keyframes anim {
+from {margin-left:3px;}
+to {margin-left:400px;}
+}
+
+.ship {
+animation:anim 4s 3;
+-webkit-animation:anim 20s 10;
+}
+
+.ship2 {
+animation:anim 4s 3;
+-webkit-animation:anim 20s 10;
+}
+
+  </style> 
+ </head>
+ <body>
+  
+  
+	<div class="ship"></div>
+	<div class="ship2"></div>
+	<div class="sun"></div>
+	<div class="block1">
+		<div class="mountain"></div>
+		<div class="mountain2"></div>
+		<div class="mountain3"></div>
+		<div class="mountain4"></div>
+	</div> 
+   
+    
+    
+    <div class="block"></div>
+	
+ </body>
+</html>

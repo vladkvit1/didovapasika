@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ТМ "Дідова пасіка"</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	    <!-- Мой CSS -->
+    <link href="style.css" rel="stylesheet">
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+    <script src="js/ie-emulation-modes-warning.js"></script>
+  </head>
+
+  <body>
+
+
+    <div class="container">
+	 <div class="row-fluid">
+        <nav class="navbar navbar-default">
+			<div class="container-fluid">
+			<div>
+			  <ul class="nav navbar-nav" id="nav">
+				<li role="presentation"><a href="index.html">Главная</a></li>
+				<li role="presentation"><a href="products.html">Продукция</a></li>
+				<li role="presentation"><a href="about.html">О нас</a></li>
+				<li role="presentation"><a href="contacts.html">Контакты</a></li>
+				<li role="presentation"><a href="med.html">Медовые рецепты</a></li>
+				<li role="presentation"><a href="medInfo.html">О мёде</a></li>
+				<li role="presentation"> <a href="cart.html"> <img src="img/4.png" width="30" height="30"/> Корзина </a></li>
+				<hr/>
+			  </ul>				
+			  </div>
+			</div>
+		</nav>        
+
+    <div class="row_marketing hovergallery" style="margin-top: 455px;">  
+	  <br/><p><h3>Прайс </h3></p>
+	  <hr/>   
+	  
+<div class="col-lg-9">  
+	<table  border="1px" >		
+        <tbody>
+	<tr>
+		<td><strong>Наименование</strong></td>
+		<td><strong>Объем, грамм</strong></td>
+		<td><strong>Кол-во в уп.</strong></td>
+		<td><strong>ОПТ ,без НДС</strong></td>
+		<td><strong>Добавить</strong></td>
+	</tr>
+	<tr name="myTag">
+
+		<td><h3>Мед разнотравье</h3><br/><br/><img title="1.JPG" src="http://www.didovapasika.com/contentimages/products/1.JPG" alt="1.JPG" width="100" height="200"><br/></td>
+		<td>1000</td>
+		<td>10 шт.</td>
+		<td name="price">620,00 грн.</td>
+		<td> <input type="button" class="Add" value="В корзину" onclick="add_to_card1('Мед разнотравье',620, this)" /> </td>
+	
+	</tr>
+	<tr name="myTag">
+		<td><h3>Мед разнотравье</h3><br/><br/><img title="Мед разнотравье ТМ Дідова Пасіка" src="http://www.didovapasika.com/contentimages/products/2.JPG" alt="Мед разнотравье ТМ Дідова Пасіка" width="100" height="200" > <br/> </td>
+		<td>650</td>
+		<td>20 шт.</td>
+		<td name="price"> 310,00 грн.</td>
+		<td><input type="button" class="Add"  value="В корзину" onclick="add_to_card1('Мед разнотравье 1', 310, this)" /> </td>
+	</tr>
+	<tr name="myTag">
+		<td><h3>Мёд разнотравье с грецким орехом</h3><br/><br/><img title="Мед ТМ Дідова Пасіка" src="http://www.didovapasika.com/contentimages/products/3.JPG" alt="Мед ТМ Дідова Пасіка" width="100" height="200" ><br/> </td>
+		<td>500</td>
+		<td>24 шт.</td>
+		<td name="price" >402,00 грн.</td>
+		<td><input type="button"  class="Add" value="В корзину" onclick="add_to_card1('Мёд разнотравье с грецким орехом', 402, this)" /> </td>
+	</tr>
+	<tr>
+		<td><h3>Мёд майский</h3><br/><br/><img title="Мед разнотравье ТМ Дідова Пасіка" src="http://www.didovapasika.com/contentimages/products/4.JPG" alt="Мед разнотравье ТМ Дідова Пасіка" width="100" height="200"> <br/> </td>
+		<td>350</td>
+		<td>12 шт.</td>
+		<td name="price">340,00 грн.</td>
+		<td><input type="button"  class="Add" value="В корзину" onclick="add_to_card1('Мёд майский', 340, this)" /> </td>
+	</tr>
+	<tr>
+		<td><h3>Мёд разнотравье</h3><br/><br/><img title="Мед разнотравье" src="http://www.didovapasika.com/contentimages/products/5-2.jpg" alt="Мед разнотравье" width="100" height="150"> <br/> </td>
+		<td>250</td>
+		<td>10 шт.</td>
+		<td>440,00 грн.</td>
+		<td><input type="button"  class="Add" value="В корзину" onclick="add_to_card1('Мед разнотравье 2', 440, this)" /> </td>
+	</tr>
+	<tr>
+		<td><h3>Мёд гречаный</h3><br/><br/><img title="Мед ТМ Дідова Пасіка" src="http://www.didovapasika.com/contentimages/products/5-1.jpg" alt="Мед ТМ Дідова Пасіка" width="100" height="150"> <br/> </td>
+		<td>150</td>
+		<td>50 шт.</td>
+		<td>500,00 грн.</td>
+		<td> <input type="button"  class="Add" value="В корзину" onclick="add_to_card1('Мёд гречаный', 500, this)" /> </td>
+	</tr>
+	<tr>
+		<td><h3>Мёд разнотравье</h3><br/><br/><img title="Мед разнотравье ТМ Дідова Пасіка" src="http://www.didovapasika.com/contentimages/products/7.JPG" alt="Мед разнотравье ТМ Дідова Пасіка" width="100" height="150"><br/> </td>
+		<td>70</td>
+		<td>50 шт.</td>
+		<td>200 грн.</td>
+		<td> <input type="button"  class="Add" value="В корзину" onclick="add_to_card1('Мед разнотравье 3', 200, this)" /> </td>
+	</tr>
+	<tr>
+		<td><h3>Мёд разнотравье</h3><br/><br/><img title="Мед в Харькове цена ТМ Дідова Пасіка" src="http://www.didovapasika.com/contentimages/products/8-1.jpg" alt="Мед в Харькове цена ТМ Дідова Пасіка" width="200" height="150"><br/> </td>
+		<td>35</td>
+		<td>50 шт.</td>
+		<td>150 грн.</td>
+		<td> <input type="button"  class="Add" value="В корзину" onclick="add_to_card1('Мед разнотравье 4', 150, this)" /> </td>
+	</tr>
+</tbody>
+
+</table>
+            
+</div>	
+	 
+</div>	
+	
+		<div class="col-lg-12" style="text-align: center;"> 	
+			<footer class="footer">
+			
+				<span>&copy; Company 2015 <img src="img/Bee.png" width="15" height="18" /></span>
+			
+		 </footer>
+		</div>
+		
+		</div> 
+		
+		
+    </div> <!-- /container -->
+<div id="scrollup"> <img alt="Прокрутить вверх" src="/img/up.png"></div>
+
+		 
+		<script type="text/javascript">
+window.onload = function() { // после загрузки страницы
+
+	var scrollUp = document.getElementById('scrollup'); // найти элемент
+
+	scrollUp.onmouseover = function() { // добавить прозрачность
+		scrollUp.style.opacity=0.3;
+		scrollUp.style.filter  = 'alpha(opacity=30)';
+	};
+
+	scrollUp.onmouseout = function() { //убрать прозрачность
+		scrollUp.style.opacity = 0.5;
+		scrollUp.style.filter  = 'alpha(opacity=50)';
+	};
+
+	scrollUp.onclick = function() { //обработка клика
+		window.scrollTo(0,0);
+	};
+
+// show button
+
+	window.onscroll = function () { // при скролле показывать и прятать блок
+		if ( window.pageYOffset > 0 ) {
+			scrollUp.style.display = 'block';
+		} else {
+			scrollUp.style.display = 'none';
+		}
+	};
+};		
+		localStorage = {};
+
+function add_to_card1(name, price, elem){
+			var key = name;
+			var item = parseInt(price);
+			window.localStorage.setItem(name, item);
+			elem.style.background = '#8FC9A4';
+				
+}				
+		
+		
+		</script>     
+  </body>
+</html>
